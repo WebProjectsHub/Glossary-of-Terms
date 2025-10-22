@@ -1,0 +1,553 @@
+/*---
+https://coolors.co/palette/3d5a80-98c1d9-e0fbfc-ee6c4d-293241
+---*/
+
+/*---------------set html height to full page--------*/
+html, body
+	{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	}
+/*---------------set html height to full page--------*/
+/*---------------Req---------------------------------*/
+* 
+	{
+	box-sizing: border-box;
+	}
+/*---------------Req---------------------------------*/
+/*---------------Style the links---------------------*/
+a
+	{
+	text-decoration:none;
+	color:white;
+	}
+/*---------------Style the links---------------------*/
+/*---------------Style the font----------------------*/
+@font-face 		/*---General text---*/
+	{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Raleway Regular'), url('./Assets/fonts/Raleway/Raleway-Regular.woff') format('woff');
+	}
+@font-face 		/*---Title text---*/
+	{
+	font-family: 'Arial';
+	font-style: normal ;
+	font-weight: normal;
+	src: local('Arial Black'), url('./Assets/fonts/ariblk.ttf') format('truetype');
+	}
+@font-face 		/*---Arabic text---*/
+	{
+	font-family: 'Segoe UI';
+	font-style: normal ;
+	src: local('Segoe UI Bold'), url('./Assets/fonts/Segoe_UI/Segoe UI Bold.woff') format('woff');
+	}
+@font-face 		/*---Arabic text---*/
+	{
+	font-family: 'Segoe UI normal';
+	font-style: normal ;
+	src: local('Segoe UI normal'), url('./Assets/fonts/Segoe_UI/segoeui.ttf') format('truetype');
+	}
+
+@font-face 
+	{
+	font-family: 'Material Symbols Outlined';
+	font-style: normal;
+	src: url('./Assets/fonts/MaterialSymbolsOutlined[FILL,GRAD,opsz,wght].woff2') format('woff');
+	}
+
+html	{	font-size: 62.5%;	}
+body	{
+	line-height: 1.6;
+	font-family: "Raleway",Verdana, sans-serif;
+	}
+/*---------------Style the font----------------------*/
+/*---------------Text heights and margins------------*/
+p	{	margin-top: 0;	}
+
+h1, h2, h3, h4, h5, h6 
+	{
+	margin-top: 0;
+	margin-bottom: 2rem;
+	font-weight: 300;
+	}
+
+h1	{ font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
+h2	{ font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
+h3	{ font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
+h4	{ font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
+h5	{ font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
+h6	{ font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+h7	{ font-size: 1.2rem; line-height: 1.3;  letter-spacing: 0; }
+
+/* Larger than phablet */
+@media (min-width: 550px) 
+{
+	h1 { font-size: 5.0rem; }
+	h2 { font-size: 4.2rem; }
+	h3 { font-size: 3.6rem; }
+	h4 { font-size: 3.0rem; }
+	h5 { font-size: 2.4rem; }
+	h6 { font-size: 1.5rem; }
+	h7 { font-size: 1.3rem; }
+}
+/*---------------Text heights and margins------------*/
+/*---------------style main--------------------------*/
+.main	{
+	display:flex;
+	flex-direction:column;
+	height: 100%;
+	width:100%;
+	}
+	/*---------------TopRow----------------------*/
+.top	{
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+	width:100%;
+	height:100px;
+	}
+	/*---------------TopRow----------------------*/
+	/*---------------MidRow----------------------*/
+.mid	{
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	flex:1;
+	}
+	/*---------------MidRow----------------------*/
+	/*---------------BotRow----------------------*/
+.bot	{
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	height:65px;
+	}
+	/*---------------BotRow----------------------*/
+	/*---------------Columns---------------------*/
+.colLeft
+	{
+	display:flex;
+	height:100%;
+	flex:1;
+	min-width:300px;
+	}
+.colMid
+	{
+	display:flex;
+	flex-direction:column;
+	height:100%;
+	width:30%;
+	min-width:350px;
+	max-width:550px;
+	background-color:#98C1D9;
+	}
+.colRight
+	{
+	display:flex;
+	height:100%;
+	width:20%;
+	min-width:175px;
+	max-width:450px;
+	}
+	/*---------------Columns---------------------*/
+/*---------------style main--------------------------*/
+/*---------------style TopRow------------------------*/
+	/*-------Logo--------------------------------*/
+.logo	{
+	display:flex;
+	align-items: center;
+	}
+#rak img
+	{
+	width:auto;
+	height:50px;
+	padding-left:10px;
+	}
+.top .colRight
+	{
+	justify-content:flex-end;
+	padding-right:10px;
+	}
+#rakmun img
+	{
+	display:flex;
+	width:auto;
+	height:30px;
+	float:left;
+	}
+	/*-------Logo--------------------------------*/	
+/*---------------style TopRow------------------------*/
+/*---------------style MidRow------------------------*/
+	/*-------Mid Col Left------------------------*/
+.mid .colLeft
+	{
+	flex-direction:column;
+	align-items:flex-end;
+	}
+.title1		/*---Glossary of---*/
+	{
+	font-family:'Arial', sans-serif;
+	color:#98C1D9;
+	font-size:4rem;
+	margin:0;
+	line-height:1em;
+	text-align:right;
+	text-align: -webkit-right;
+	width:300px;
+	height:100px;
+	padding-top:10px;
+	padding-right:5px;
+	}
+.leftframe	/*---wordcloud---*/
+	{
+	height: calc(100% - 100px);
+	width:100%;
+	}
+	/*-------Mid Col Left------------------------*/
+	/*-------Mid Col Mid-------------------------*/
+.title2		/*---Terms---*/
+	{
+	font-family:'Arial', sans-serif;
+	font-size:9rem;
+	margin:0;
+	line-height:1em;
+	color:white;
+	height:100px;
+	}
+.version
+	{
+	font-family:'Arial', sans-serif;
+	font-size:1.2rem;
+	margin:0;
+	color:black;
+	padding-left:20px;
+	}
+.version p
+	{
+	margin:0;
+	}
+		/*-Alphabet links--------------------*/	
+.midalpha
+	{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	margin:8px;
+	justify-content:space-evenly;
+	}
+#links		/*---midalpha #links---*/
+	{
+	letter-spacing:0.15em;
+	text-align:left;
+	margin-top:2px;
+	margin-bottom:2px;
+	justify-content: left;
+	width: -webkit-fill-available;
+	}
+
+
+.midalpha >a	/*---A to Z---*/
+	{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:#3D5A80;
+	font-weight:bold;
+	min-width:35px;
+	height:30px;
+	margin:2px;
+	padding:5px;
+	border-radius:5px;
+	flex:1;
+	}
+.midalpha >a:hover
+	{
+	font-size:150%;
+	background-color:#293241;
+	}
+		/*-Alphabet links--------------------*/	
+	/*-------Mid Col Mid-------------------------*/
+	/*-------Mid Col Right-----------------------*/
+		/*-Searchbox-------------------------*/	
+.mid .colRight
+	{
+	display:flex;
+	justify-content:center;
+	}
+.mid .colRight iframe
+	{
+	width:100%;
+	height:100%;
+	border:none;
+	}
+#termsearch	/*---input box---*/
+	{
+	font-family:'Segoe UI';
+	width: 80%;
+	font-size: 1.2rem;
+	padding:5px;
+	border: 1px solid silver;
+	margin-bottom: 12px;
+	align-self:center;
+	}
+#terminologies	/*---Search terminology UL - Unorderd List---*/
+	{
+	width:100%;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	}
+#terminologies li a 	/*---Search terminology li - list style---*/
+	{
+	width:100%;
+	padding: 5px;
+	text-decoration: none;
+	font-size: 12px;
+	color: black;
+	display: block;
+	text-align:left;
+	margin-left:10%;
+	}
+#terminologies li a:hover
+	{
+	font-size:150%;
+	color:#EE6C4D;
+	}
+mark	{
+	font-weight:bold;
+	background-color:#EE6C4D30
+	}
+
+
+
+
+		/*-Searchbox-------------------------*/	
+	/*-------Mid Col Right-----------------------*/	
+/*---------------style MidRow------------------------*/
+/*---------------style BotRow------------------------*/
+.colLeft > .band
+	{
+	display:block;
+	height:25px;
+	width:100%;
+	background-color: #3D5A80;
+	}
+
+.colMid > .band
+	{
+	display:block;
+	height:25px;
+	width:100%;
+	background-color: #EE6C4D;
+	}
+
+.colRight > .band
+	{
+	display:block;
+	height:25px;
+	width:100%;
+	background-color: #293241;
+	}
+/*---------------style BotRow------------------------*/
+
+/*---------------RESPONSIVE--------------------------*/
+/*---tablet - portrait, 768px wide---*/
+@media only screen and (max-width: 768px) 
+{
+	.colLeft
+		{	min-width:250px;}
+
+	.title1, .leftframe
+		{	width:100%;	}
+
+	#rakmun img
+		{	height:25px;	}
+
+	.colRight
+		{	min-width: 150px;}
+
+/*---tablet - portrait, 600px wide---*/
+@media only screen and (max-width: 600px) 
+{
+	.top, .mid, .bot
+		{
+		flex-direction:column;
+		height:unset;
+		}
+	.top .colLeft
+		{
+		width:100%;
+		justify-content:flex-end;
+		padding-right:10px;
+		}
+	#rak img
+		{height:40px;	}
+	.top .colMid, .bot .colMid
+		{
+		width:100%;
+		height:0;
+		}
+	.top .colRight
+		{
+		width:100%;
+		max-width:unset;
+		}
+	.leftframe
+		{
+		height:0
+		}
+	.title1
+		{
+		display:flex;
+		align-items:flex-end;
+		justify-content: flex-end;
+		}
+
+	.title2
+		{
+		font-size:8rem;
+		margin-right:5px;
+		}
+	.mid .colLeft
+		{
+		margin-right:5px;
+		}
+	.mid .colMid
+		{
+		width:100%;
+		align-items:flex-end;
+		text-align: right;
+		max-width:unset;
+		min-width:unset;
+		height:auto;
+		}
+	.version
+		{
+		width:100%;
+		padding-right:0;
+		margin-right:5px;
+		align-items:flex-end;
+		text-align: right;
+		max-width:unset;
+		min-width:unset;
+		height:auto;
+		}
+	.mid .colRight
+		{
+		width:100%;
+		padding-top:10px;
+		max-width:unset;
+		}
+	.bot .colMid, .bot .colRight
+		{
+		height:100%;
+		width:100%;
+		max-width:unset;
+		min-width:unset;
+		}
+	.top
+		{
+		flex-direction:row;
+		}
+	.top .colLeft
+		{
+		width:unset;
+		min-width:unset;
+		justify-content:flex-end;
+		padding-right:10px;
+		}
+
+	.top .colMid
+		{
+		width:unset;
+		min-width:unset;
+		height:100%;
+		}
+}
+/*---tablet - landscape, 825px wide---*/
+@media only screen and (max-width: 825px)
+			and (orientation:landscape) 
+{
+	.top, .mid, .bot
+		{
+		flex-direction:column;
+		height:unset;
+		}
+	.top .colLeft
+		{
+		width:100%;
+		justify-content:flex-end;
+		padding-right:10px;
+		}
+	#rak img
+		{height:40px;	}
+	.top .colMid, .bot .colMid
+		{
+		width:100%;
+		height:0;
+		}
+	.top .colRight
+		{
+		width:100%;
+		max-width:unset;
+		}
+	.leftframe
+		{
+		height:0
+		}
+	.title1
+		{
+		display:flex;
+		align-items:flex-end;
+		justify-content: flex-end;
+		}
+	.title2
+		{
+		font-size:8rem;
+		}
+
+	.mid .colMid, .version
+		{
+		width:100%;
+		padding-right:5px;
+		align-items:flex-end;
+		text-align: right;
+		max-width:unset;
+		min-width:unset;
+		height:auto;
+		}
+	.mid .colRight
+		{
+		width:100%;
+		padding-top:10px;
+		max-width:unset;
+		}
+	.bot .colMid, .bot .colRight
+		{
+		height:100%;
+		width:100%;
+		max-width:unset;
+		min-width:unset;
+		}
+	.top
+		{
+		flex-direction:row;
+		}
+	.top .colLeft
+		{
+		width:unset;
+		min-width:unset;
+		justify-content:flex-end;
+		padding-right:10px;
+		}
+
+	.top .colMid
+		{
+		width:unset;
+		min-width:unset;
+		height:100%;
+		}
+}

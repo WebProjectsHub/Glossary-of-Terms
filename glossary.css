@@ -1,0 +1,545 @@
+/*---
+https://coolors.co/palette/3d5a80-98c1d9-e0fbfc-ee6c4d-293241
+---*/
+/*---------------General-----------------------------*/
+body
+	{overflow:hidden;}
+/*---------------General-----------------------------*/
+/*---------------style main--------------------------*/
+	/*---------------TopRow----------------------*/
+.GlosTop
+	{
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	
+	}
+	/*---------------TopRow----------------------*/
+	/*---------------MidRow----------------------*/
+.GlosMid
+	{
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	/*---	background-color:gray;	---*/
+	overflow:auto;
+	}
+	/*---------------MidRow----------------------*/
+	/*---------------BotRow----------------------*/
+.GlosBot
+	{
+	display:flex;
+	flex-direction:row;
+	height:20px;
+	margin:0 10px;
+	border-radius:5px;
+	position:sticky;
+	bottom:0;
+	}
+	/*---------------BotRow----------------------*/
+/*---------------style main--------------------------*/
+/*---------------Top Row-----------------------------*/
+	/*-------Columns-----------------------------*/
+.GlosTopContainer
+	{
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+	width:100%;
+	}
+.GlosTop .colLeft
+	{
+	display:flex;
+	flex-direction:column;
+	height:100%;
+	flex:1;
+	}
+.colLeft
+	{
+	flex:unset;
+	min-width:unset;
+	}
+.GlosTop .colRight
+	{
+	display:flex;
+	flex-direction:column;
+	height:100%;
+	width:auto;
+	}
+.colRight
+	{
+	min-width:unset;
+	max-width:unset;
+	}
+	/*-------Columns-----------------------------*/
+	/*-------Logo--------------------------------*/
+.GlosTop .colLeft .logo
+	{
+	display:flex;
+	align-items: flex-start;
+	}
+#rakGlos img
+	{
+	width:auto;
+	height:30px;
+	padding-left:10px;
+	}
+.GlosTop .colRight .logo
+	{
+	display:flex;
+	justify-content: flex-end;
+	}
+#rakmunGlos img	
+	{
+	display:flex;
+	width:auto;
+	height:20px;
+	padding-right:10px;
+	float:right;
+	}
+	/*-------Logo--------------------------------*/
+	/*-------Top Title---------------------------*/
+.GlosTitle
+	{
+	font-family:'Arial', sans-serif;
+	color:#293241;
+	font-size:2.8rem;
+	margin:0;
+	text-align:left;
+	text-align: -webkit-left;
+	flex:1;
+	padding-left:10px;
+	display:flex;
+	flex-direction:row;
+	line-height:unset;
+	align-items:center;
+	}
+.GlosTitle h4
+	{
+	margin:0;
+	margin-block-end:0;
+	line-height: 1;
+	}
+.GlosVersion
+	{
+	align-items:center;
+	font-size:1rem;
+	line-height:unset;
+	height:unset;
+	color:#293241;
+	padding-left:10px;
+	}
+.GlosVersion p
+	{
+	margin:0;
+	}
+	/*-------Top Title---------------------------*/
+	/*-------Top Links---------------------------*/
+.mainLinks	/*---container---*/
+	{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	width:100%;
+	height:100%;
+	padding-right: 5px;
+	}
+.toplinks
+	{
+	flex:1;
+	margin:5px 5px 0 5px;
+	}
+.toplinks button
+	{
+	background-color:#98C1D9;
+	height:100%;
+	width:100%;
+	border-radius:5px;
+	border:none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size:1.2rem;
+	cursor:pointer;
+	color:#293241;
+	}
+.toplinks button:hover
+	{
+	background-color:#3D5A80;
+	color:white;
+	}
+	/*-------Top Links---------------------------*/
+	/*-------Alpha Links-------------------------*/
+.GlosTopAlpha, .GlosTopDisciplines
+	{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	padding:8px 8px 2px 8px;
+	justify-content:space-evenly;
+	}
+.GlosTopAlpha >div
+	{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:#3D5A80;
+	font-weight:bold;
+	min-width:35px;
+	height:30px;
+	margin:2px;
+	padding:5px;
+	border-radius:5px;
+	flex:1;
+	}
+.GlosTopAlpha >a:hover, .GlosTopDisciplines >a:hover
+	{
+	font-size:150%;
+	background-color:#293241;
+	}
+
+
+.GlosTopAlpha >a, .GlosTopDisciplines >a
+	{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:#3D5A80;
+	font-weight:bold;
+	min-width:35px;
+	height:30px;
+	margin:2px;
+	padding:5px;
+	border-radius:5px;
+	flex:1;
+	}
+
+.GlosTopAlpha >a button
+	{
+	background-color:rgba(0,0,0,0);
+	border:none;
+	cursor:pointer;
+	color:inherit;
+	font-style:inherit;
+	font-weight:inherit;
+	font-size:inherit;
+	font-family:inherit;
+	}
+.GlosTopAlpha >a button:hover
+	{
+	background-color:#293241;
+	}
+	/*-------Alpha Links-------------------------*/
+	/*-------Discipline Links--------------------*/
+.GlosTopDisciplines >a
+	{
+	min-width:unset;
+	letter-spacing:0.15rem;
+	}
+.GlosTopDisciplines >a:hover
+	{
+	color:#293241;
+	background-color:#EE6C4D;
+	font-weight:bold;
+	}
+ .active, #active
+	{
+	background-color:#EE6C4D;
+	color:#293241;
+	font-size:150%;
+	}
+
+ .active >a:hover, #active >a:hover
+	{
+	font-size:150%;
+	background-color:#293241;
+	}
+
+	/*-------Discipline Links--------------------*/
+/*---------------Top Row-----------------------------*/
+/*---------------Mid Row-----------------------------*/
+	/*-------Main Glossary container-------------*/
+.mainbody
+	{
+	display:flex;
+	flex-direction:column;
+
+	flex:1;
+	border-radius:5px;
+	margin:10px 10px 5px 10px;
+	box-shadow: 0px 0px 15px gray;
+	overflow:auto;
+	}
+.mainbody >div
+	{
+	display:flex;
+	width:30%;
+	height:auto;
+	margin:1%;
+	border-radius:10px;
+	width:100%;
+	}
+	/*-------Main Glossary container-------------*/
+	/*-------Main Glossary-----------------------*/
+.termsletterhead	/*---Letter container---*/
+	{
+	display:flex;
+	justify-content:center;
+	background-color:white;
+	border-radius:5px;
+	}
+.termsletterhead h5
+	{
+	font-family: 'Arial', sans-serif;
+	margin:0;
+	}
+.terminology		/*---terms container---*/
+	{
+	display:flex;
+	flex-direction:column;
+	margin:5px 15px;
+	}
+.terminology >div	/*---Individual terms---*/
+	{
+	display: flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:center;
+	border-radius:5px;
+	padding:5px;
+	font-size:1.8rem;
+	}
+.terminology >div:hover
+	{
+	box-shadow: 5px 10px 20px silver;
+	font-size:2rem;
+	letter-spacing: .05rem;
+	font-weight:bold;
+	}
+.terminology >div a
+	{
+	color:black;
+	width:50%;
+	align-items:center;
+	}
+.terminology >div a:hover
+	{
+	color:#EE6C4D;
+	}
+.termsleftbox	/*---Arabic---*/
+	{
+	font-family: 'Segoe UI';
+	display:flex;
+	/*---flex-direction:row-reverse;---*/
+	align-items:center;
+	text-align: right;
+	text-align: -webkit-right;
+	margin-right:5px;
+	height:100%;
+	direction: rtl;
+	}
+.termsrightbox	/*---English---*/
+	{
+	font-family: 'Raleway';
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	text-align: left;
+	text-align: -webkit-left;
+	margin-left:5px;
+	height:100%;
+	}
+
+		/*-------Related---------------------*/
+#related	/*---h6---*/
+	{
+	font-style:italic;
+	margin:0;
+	}
+#relatedList ul
+	{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	list-style:none;
+	padding:0;
+
+	margin:0;
+	}
+#relatedList ul li
+	{
+	display:flex;
+	padding:0 10px 0 10px;
+	text-align: -webkit-center;
+	}
+#relatedList ul li a
+	{
+	color:blue;
+	text-decoration:underline;
+	text-decoration-color:blue;
+	text-decoration-style: dotted;
+	text-underline-offset: .25em;
+	font-style:italic;
+	/*-- text-align: -webkit-center; --*/
+	} 
+h6 a
+	{
+	color:blue;
+	text-decoration:underline;
+	text-decoration-color:blue;
+	text-decoration-style: dotted;
+	text-underline-offset: .25em;
+	}
+
+
+#relatedList ul li a:hover, h6 a:hover
+	{	
+	color:#EE6C4D;
+	text-decoration-color:#EE6C4D;
+	font-weight:bold;
+	}
+
+		/*-------Related---------------------*/
+	/*-------Main Glossary-----------------------*/
+	/*-------Disciplines-------------------------*/
+#midDisciplines
+	{
+	height:calc(100% - 100px);
+	}
+
+#disciplines
+	{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content: space-evenly;
+	}
+#disciplines a
+	{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	width:auto;
+	height:auto;
+	margin:1%;
+	border-radius:10px;
+	flex:1;
+	flex-basis:30%;
+	background-color:#3D5A80;
+	font-family:'Arial';
+	font-weight:bold;
+	font-size: 4.0rem;
+	padding:5px;
+	}
+#disciplines a:hover
+	{
+	color:#3D5A80;
+	background-color:#EE6C4D;
+	}
+	/*-------Disciplines-------------------------*/
+	/*-------Terminologies-----------------------*/
+#middle
+	{
+	height:calc(100% - 170px);
+	}
+.mainbody .eng, .mainbody .Ara
+	{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	width:unset;
+	flex:1;
+	height:auto;
+	align-items:center;
+	cursor:pointer;
+	text-align: center;
+	text-align: -webkit-center;
+	padding:10px;
+	border-radius:20px;
+
+	cursor:copy;
+	}
+#eng:hover, #Ara:hover
+	{
+
+	box-shadow:0 5px 15px silver;
+	background-color: buttonface;
+	}
+
+.Ara
+	{
+	font-family:  'Segoe UI normal';
+	direction: rtl;
+	}
+
+	/*-------Terminologies-----------------------*/
+/*---------------Mid Row-----------------------------*/
+/*---------------Bot band----------------------------*/
+.GlosBot .colLeft
+	{
+	display:flex;
+	height:100%;
+	width:100%;
+	}
+
+.colLeft > .band
+	{
+	display:block;
+	height:15px;
+	width:100%;
+	background-color: #EE6C4D;
+	border-radius:5px;
+	}
+/*---------------Bot band----------------------------*/
+
+/*---------------RESPONSIVE--------------------------*/
+/*---manage display of alphatext---*/
+@media only screen and (min-width: 1030px) 
+{
+	#middle	{	height:calc(100% - 135px);	}	
+}
+@media only screen and (max-width: 1029px) 
+{
+	#middle	{	height:calc(100% - 170px);	}	
+}
+@media only screen and (max-width: 675px) 
+{
+	#middle	{	height:calc(100% - 195px);	}	
+}
+@media only screen and (max-width: 550px) 
+{
+	#middle	{	height:calc(100% - 185px);	}	
+}
+@media only screen and (max-width: 522px) 
+{
+	#middle	{	height:calc(100% - 220px);	}	
+}
+@media only screen and (max-width: 366px) 
+{
+	#middle	{	height:calc(100% - 260px);	}	
+}
+
+/*---manage display of title---*/
+@media only screen and (max-width: 675px) 
+{
+	.GlosVersion
+		{
+		height:100%;
+		display:flex;
+		flex-direction:column;
+		justify-content: space-around;
+		align-items: flex-start;
+		}
+	.GlosTitle h4
+		{ width:min-content;	}
+}
+
+/*---manage display of mainlinks---*/
+@media only screen and (max-width: 475px) 
+{
+	.mainLinks
+		{
+		flex-direction:column;
+		}
+}
+
